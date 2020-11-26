@@ -1,0 +1,9 @@
+---
+# tasks file for apache
+
+- name: install packages {{ packages }}
+  yum:
+    name: "{{ packages }}"
+    state: latest
+
+- name: 
